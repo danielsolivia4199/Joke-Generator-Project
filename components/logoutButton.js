@@ -1,7 +1,7 @@
 import { signOut } from '../utils/auth';
 
 const logoutButton = () => {
-  const domString = '<button id="google-auth" class="btn btn-danger">SIGNOUT</button>';
+  const domString = '<button id="google-auth" class="btn btn-success">SIGNOUT</button>';
   document.querySelector('#login-form-container').innerHTML = (domString);
   document.querySelector('#google-auth').addEventListener('click', signOut);
 };
